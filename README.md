@@ -4,3 +4,12 @@ Adapted from https://github.com/ProLoser/Flexbox.less but with some additions (i
 
 ## Demo
 http://jackrabbitsgroup.github.io/less-flexbox/
+
+## Install
+### Bower
+- add `"less-flexbox": "latest"` to your `bower.json` file then run `bower install`
+OR
+- run `bower install less-flexbox`
+
+## Documentation
+- read the `flexbox.less` file for example usage
