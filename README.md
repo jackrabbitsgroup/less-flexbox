@@ -6,7 +6,7 @@ Adapted from https://github.com/ProLoser/Flexbox.less but with some additions (i
 http://jackrabbitsgroup.github.io/less-flexbox/
 
 ## Dependencies
-- NONE
+- `lesshat`
 
 ## Install
 ### Bower
