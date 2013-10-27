@@ -5,6 +5,9 @@ Adapted from https://github.com/ProLoser/Flexbox.less but with some additions (i
 ## Demo
 http://jackrabbitsgroup.github.io/less-flexbox/
 
+## Dependencies
+- NONE
+
 ## Install
 ### Bower
 - add `"less-flexbox": "latest"` to your `bower.json` file then run `bower install`
