@@ -1,4 +1,6 @@
 /*
+Uses flexbox-mixins.less - make sure to @import it too - before including this file!
+
 @usage
 //EXAMPLE 1 - row / horizontal
 <div class='flexbox row'>
@@ -13,37 +15,9 @@
 </div>
 
 */
-
-/*
-mixins (ones NOT included (directly) in LESSHat)
-*/
-// copied from http://coding.smashingmagazine.com/2013/05/22/centering-elements-with-flexbox/
-.flexbox-center() {
-	.align-items(center);
-	/*
-	-webkit-box-align: center;
-	-moz-box-align: center;
-	-ms-flex-align: center;
-	-webkit-align-items: center;
-	align-items: center;
-	*/
-
-	.justify-content(center);
-	/*
-	-webkit-box-pack: center;
-	-moz-box-pack: center; 
-	-ms-flex-pack: center; 
-	-webkit-justify-content: center;
-	justify-content: center;
-	*/
-	
-	height:100%;
-	width:100%;
-}
-
 /*** CONTAINER ***/
 .flexbox {
-	.display(flex);
+	.flexbox();
 
 	width: 100%;		// corrects firefox
 	.box-sizing(border-box);
@@ -65,7 +39,7 @@ mixins (ones NOT included (directly) in LESSHat)
 	
 	/*** CENTER ***/
 	&.center {
-		.flexbox-center();
+		.center();
 	}
 
 	/*** CELLS ***/
@@ -83,15 +57,15 @@ mixins (ones NOT included (directly) in LESSHat)
 	}
 
 	.flex0 {
-		.flex(0 0 auto);
+		.flex(0);
 	}
 	.flex1 {
-		.flex(1 1 auto);
+		.flex(1);
 	}
 	.flex2 {
-		.flex(2 2 auto);
+		.flex(2);
 	}
 	.flex3 {
-		.flex(3 3 auto);
+		.flex(3);
 	}
 }
